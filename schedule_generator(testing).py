@@ -525,10 +525,9 @@ def main():
     print('Actual result of running is')
     print(f"Possible Schedule Result is {course_id_4}")
     expected_list_3 = [[]]
-    print(f"Length of test case is {len(expected_list_3)}")
+    print(f"Length of test case is {len(expected_list_3[0])}")
     print(f"Length of actual result is {len(course_id_4)}")
     result_4 = []
-    print(result_4)
     result_4.append(course_id_4 == expected_list_3[0])
     if False not in result_4: 
         print("TEST PASSED! Every sublist in result has an exact match to a sublist in the expected list")
