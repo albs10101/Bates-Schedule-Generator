@@ -11,6 +11,6 @@ If no compatible combinations are found for the entered courses, the user receiv
 The application comprises two Python files. The first, parsingcourses.py, includes the CourseScheduler class, parsing the "ACTUAL_COURSE_DATA.html" file to create 
 a course catalog dictionary. The second file, schedule_generator.py, contains functions controlling the tkinter user interface and optimization functions for the 
 scheduling process. For potential project expansions, we might consider directly pulling the .html file from Garnet Gateway using requests, allowing users to access 
-schedules from different semesters easily. Additionally, we could enable students to specify a time interval for scheduling courses. The current also needs to address
+schedules from different semesters easily. Additionally, we could enable students to specify a time interval for scheduling courses. The current code also needs to address
 cases where courses with labs list the lab under the same CRN (e.g., CHEM 215). To solve this problem, I would need to adapt the CourseScheduler's output dictionary to 
 combine class and lab times into a single time list for single lab time cases.
